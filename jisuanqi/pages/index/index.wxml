@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    
+  </view>
+  <swiper autoplay="true" interval="2000" indicator-dots circular=''>
+    <swiper-item><image mode="widthFix" src="../../pic/kasha.jpg"></image></swiper-item>
+    <swiper-item><image mode="widthFix" src="../../pic/ig.jpg"></image></swiper-item>
+    <swiper-item><image mode="widthFix" src="../../pic/swy.jpg"></image></swiper-item>
+  </swiper>
+  <view>
+    <text class="userinfo-nickname">{{userInfo.nickName}}（广告位在线招租）</text>
+  </view>
+  <view class="usermotto">
+    <!--<text class="user-motto">{{motto}}</text>-->
+    <button type="default" size="{{primarySize}}" plain="{{plain}}" hover-class="button-hover"
+        disabled="{{disabled}}" bindtap="toCalc"> {{motto}} </button>
+  </view>
+  
+
+</view>

@@ -1,0 +1,6 @@
+<view class="container">
+<input placeholder='被加数' bindinput='getNum1'></input>
+<input placeholder='加数' bindinput='getNum2'></input>
+<button bindtap='add' type="primary">计算</button>
+<input placeholder='结果' value="{{result}}" disabled></input>
+</view>
